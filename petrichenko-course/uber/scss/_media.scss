@@ -1,0 +1,404 @@
+@media (max-width: 1200px) {
+  header {
+    nav {
+      .menu {
+        &_item {
+          padding-right: 20px;
+          .menu_link {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  .promo {
+    &_header {
+      font-size: 50px;
+    }
+    &_subheader {
+      font-size: 30px;
+    }
+  }
+  .advantages {
+    .advantage {
+      align-items: flex-start;
+      &_text {
+        width: 300px;
+      }
+    }
+  }
+  .mobile {
+    &_item {
+      width: 300px;
+      height: 260px;
+    }
+  }
+  .footer_wrapper {
+    .footer_social {
+      width: 30%;
+    }
+    .footer_links {
+      width: 40%;
+      &_main {
+        column-gap: 40px;
+        a {
+          font-size: 13px;
+        }
+      }
+      &_sub {
+        column-gap: 15px;
+        a {
+          font-size: 11px;
+        }
+      }
+    }
+    .footer_mobile {
+      width: 30%;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    nav {
+      .menu {
+        &_item {
+          padding-right: 8px;
+          .menu_link {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    .subheader {
+      &_logo {
+        img {
+          width: 100%;
+        }
+      }
+      &_official {
+        font-size: 11px;
+      }
+      &_phone {
+        font-size: 18px;
+      }
+      &_btn {
+        margin-top: 21px;
+        height: 40px;
+        width: 100%;
+        font-size: 10px;
+      }
+    }
+  }
+  .promo {
+    &_header {
+      font-size: 40px;
+    }
+    &_subheader {
+      font-size: 25px;
+    }
+  }
+  .advantages {
+    .advantage {
+      flex-direction: column;
+      align-items: center;
+      &_text {
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+  .mobile {
+    &_item {
+      width: 320px;
+      height: 280px;
+    }
+  }
+  .choice {
+    .car_img {
+      width: 100%;
+    }
+  }
+  .footer_wrapper {
+    .footer_links {
+      &_sub {
+        column-gap: 12px;
+      }
+    }
+    .footer_mobile {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    nav {
+      .menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        transition: 0.6s all;
+        &_active {
+          left: 0;
+        }
+        &_item {
+          padding-right: 0;
+          border: none;
+          margin: 10px 0;
+          .menu_link {
+            font-size: 20px;
+            text-align: center;
+          }
+        }
+      }
+      .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        width: 26px;
+        transform: translateY(-50%);
+        height: 12px;
+        span {
+          display: block;
+          height: 2px;
+          width: 100%;
+          background-color: white;
+          margin-bottom: 2px;
+          transition: 0.5s all;
+        }
+        &_active {
+          span {
+            margin-bottom: -2px;
+            &:nth-child(1) {
+              transform: translateY(3px) rotate(-45deg);
+            }
+            &:nth-child(2) {
+              display: none;
+            }
+            &:nth-child(3) {
+              transform: translateY(3px) rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+    .subheader {
+      .xs-hidden {
+        display: none;
+      }
+      .xs-visible {
+        display: block;
+      }
+      &_phone {
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      &_btn {
+        display: block;
+        width: 200px;
+        height: 40px;
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+    }
+  }
+  .promo {
+    &_header {
+      line-height: 45px;
+    }
+  }
+  .advantages {
+    .advantage {
+      &_text {
+        width: 400px;
+      }
+    }
+  }
+  .mobile {
+    &_item {
+      width: 350px;
+      height: 310px;
+    }
+  }
+  .footer_wrapper {
+    .footer_links {
+      &_main {
+        column-gap: 15px;
+        a {
+          font-size: 12px;
+        }
+      }
+      &_sub {
+        column-gap: 10px;
+        flex-wrap: wrap;
+      }
+    }
+    .footer_mobile {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  header {
+    nav {
+      height: 30px;
+      .menu {
+        &_active {
+          width: 260px;
+        }
+        &_item {
+          width: 100%;
+          padding: 5px 0;
+          .menu_link {
+            display: block;
+          }
+        }
+      }
+    }
+    .subheader {
+      top: 30px;
+      height: 60px;
+      &_logo {
+        margin-top: 16px;
+      }
+      &_official {
+        display: none;
+      }
+      &_phone {
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-top: 11px;
+      }
+      &_btn {
+        width: 110px;
+        height: 22px;
+        font-size: 10px;
+        margin-top: 9px;
+      }
+    }
+  }
+  .promo {
+    min-height: 400px;
+    padding: 123px 0 35px 0;
+    &_header {
+      padding: 0 24px;
+      font-size: 30px;
+      line-height: 35px;
+    }
+    &_subheader {
+      margin-top: 33px;
+      font-size: 20px;
+      padding: 0 10px;
+      line-height: 30px;
+    }
+    &_descr {
+      display: none;
+    }
+    &_btn {
+      width: 210px;
+      height: 50px;
+      margin-top: 72px;
+    }
+  }
+  .advantages {
+    padding: 22px 0 36px 0;
+    .advantage {
+      margin-top: 26px;
+      &_img {
+        height: 100px;
+        width: 100px;
+      }
+      &_text {
+        margin-top: 27px;
+        width: 100%;
+        .advantage_descr {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .title {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 16px;
+  }
+  .choice {
+    padding-bottom: 31px;
+    min-height: 393px;
+    background: none;
+    .black_bg {
+      height: 100%;
+      z-index: -1;
+    }
+    .car_img {
+      width: 100%;
+    }
+    .title {
+      display: none;
+    }
+    .subtitle {
+      display: none;
+    }
+    &_descr {
+      color: white;
+      font-weight: 300;
+      font-size: 17px;
+    }
+  }
+  .mobile {
+    &_item {
+      width: 290px;
+      height: 254px;
+    }
+  }
+  .footer_wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 21px;
+    padding-bottom: 30px;
+    .footer_social {
+      order: 2;
+      margin-top: 16px;
+      justify-content: center;
+      width: 100%;
+    }
+    .footer_links {
+      order: 1;
+      width: 100%;
+      &_main {
+        padding: 0;
+      }
+    }
+    .footer_mobile {
+      order: 3;
+      margin-top: 19px;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

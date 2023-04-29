@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(255, 255, 224);
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: medium;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.chapter {
+    color: red;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.speech,
+.book-name {
+    font-style: italic;
+}
