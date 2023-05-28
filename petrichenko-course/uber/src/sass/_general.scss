@@ -1,6 +1,6 @@
 .label {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   margin: 0 auto;
   width: 113px;
   height: 24px;
@@ -19,7 +19,7 @@
 
 .title {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   margin-top: 33px;
   font-weight: 700;
   font-size: 38px;
@@ -33,7 +33,7 @@
 
 .subtitle {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   margin-top: 19px;
   margin-bottom: 0;
   color: #222222;
